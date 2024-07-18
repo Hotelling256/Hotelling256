@@ -1,0 +1,15 @@
+            <AliPlayerV3
+              ref="player"
+              class="h-64 md:h-96 w-full rounded-lg"
+              style="height: 100%; width: 100%;"
+              :source="course.info.course[0].video_url"
+              :cover="course.info.course_cover"
+              :options="options"
+              @play="onPlay($event)"
+              @pause="onPause($event)"
+              @playing="onPlaying($event)"
+            />
+              <video width="320" height="240" controls>
+ <source src="http://sgigui51q.hb-bkt.clouddn.com/scenery.mp4" type="video/mp4">
+</video> 
+
